@@ -533,7 +533,7 @@ normal_command_mode:
     }
 
     printf("pkgdata: %s\n", cmd);
-    int result = system(cmd);
+    int result = -1; //system(cmd);
     if (result != 0) {
         fprintf(stderr, "-- return status = %d\n", result);
     }
